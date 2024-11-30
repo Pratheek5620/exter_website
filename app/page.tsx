@@ -1,7 +1,7 @@
-import { Button } from "@/components/ui/button"
-import { Zap, Leaf, MapPin } from 'lucide-react'
-import Link from "next/link"
-import Image from "next/image"
+import { Button } from "@/components/ui/button";
+import { Zap, Leaf, MapPin } from 'lucide-react';
+import Link from "next/link";
+import Image from "next/image";
 
 export default function Home() {
   return (
@@ -10,7 +10,7 @@ export default function Home() {
         <Link className="flex items-center justify-center" href="#">
           <Image
             src="/exter_name-logo.png"
-            alt="SwapCharge Logo"
+            alt="Exter Logo"
             width={150}
             height={150}
             className="mr-2"
@@ -70,6 +70,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section id="about" className="w-full py-12 md:py-24 lg:py-10 bg-green-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">What we stand for</h2>
@@ -96,54 +97,6 @@ export default function Home() {
           </div>
         </section>
 
-
-
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Why Choose exters?</h2>
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <Zap className="h-8 w-8 text-blue-500" />
-                <h3 className="text-xl font-bold">Lightning Fast</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Swap your battery in less than 5 minutes and get back on the road.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <Leaf className="h-8 w-8 text-green-500" />
-                <h3 className="text-xl font-bold">Eco-Friendly</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Reduce your carbon footprint with our sustainable energy solutions.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <MapPin className="h-8 w-8 text-red-500" />
-                <h3 className="text-xl font-bold">Convenient Locations</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Find our swapping stations at easily accessible locations across the city.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Why Choose exters?</h2>
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <Zap className="h-8 w-8 text-blue-500" />
-                <h3 className="text-xl font-bold">Lightning Fast</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Swap your battery in less than 5 minutes and get back on the road.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <Leaf className="h-8 w-8 text-green-500" />
-                <h3 className="text-xl font-bold">Eco-Friendly</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Reduce your carbon footprint with our sustainable energy solutions.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <MapPin className="h-8 w-8 text-red-500" />
-                <h3 className="text-xl font-bold">Convenient Locations</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Find our swapping stations at easily accessible locations across the city.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
         <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">How It Works</h2>
@@ -151,7 +104,7 @@ export default function Home() {
               <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">1</div>
                 <h3 className="text-xl font-bold">Locate</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Find the nearest exter battery-swapping hub using our mobile app.</p>
+                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Find the nearest Exter battery-swapping hub using our mobile app.</p>
               </div>
               <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
                 <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">2</div>
@@ -166,6 +119,7 @@ export default function Home() {
             </div>
           </div>
         </section>
+
         <section id="cta" className="w-full py-12 md:py-24 lg:py-32 text-black bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
@@ -182,7 +136,7 @@ export default function Home() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center px-4 md:px-6 border-t bg-[#334DA0] text-white">
         <div className="items-center justify-between w-full">
-          <p className="text-center justify-center text-xs text-gray-200">© 2024 exter. All rights reserved.</p>
+          <p className="text-center justify-center text-xs text-gray-200">© 2024 Exter. All rights reserved.</p>
         </div>
       </footer>
     </div>
