@@ -1,9 +1,48 @@
-import { Button } from "@/components/ui/button";
-import { Zap, Leaf, MapPin } from 'lucide-react';
-import Link from "next/link";
-import Image from "next/image";
+"use client"
+import { Button } from "@/components/ui/button"
+import { Zap, Leaf, MapPin } from 'lucide-react'
+import Link from "next/link"
+import Image from "next/image"
+import {
+  Carousel,
+  CarouselApi,
+  CarouselContent,
+  CarouselItem,
+  CarouselNext,
+  CarouselPrevious,
+} from "@/components/ui/carousel"
+import { useEffect, useState } from "react"
+import { Card, CardContent } from "@/components/ui/card"
 
-export default function Home() {
+export default function LandingPage() {
+  const [api, setApi] = useState<CarouselApi>()
+  const [current, setCurrent] = useState(0)
+  const [count, setCount] = useState(0)
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    setCount(api.scrollSnapList().length)
+    setCurrent(api.selectedScrollSnap() + 1)
+
+    api.on("select", () => {
+      setCurrent(api.selectedScrollSnap() + 1)
+    })
+  }, [api])
+
+  useEffect(() => {
+    if (!api) {
+      return
+    }
+
+    const intervalId = setInterval(() => {
+      api.scrollNext()
+    }, 5000) // Change slide every 5 seconds
+    return () => clearInterval(intervalId)
+  }, [api])
+
   return (
     <div className="flex flex-col min-h-screen">
       <header className="px-4 lg:px-6 h-20 flex items-center bg-[#334DA0] text-white">
@@ -17,14 +56,14 @@ export default function Home() {
           />
         </Link>
         <nav className="ml-auto flex gap-4 sm:gap-6">
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#features">
-            Features
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#what-we-believe-in">
+            What We Believe In
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#how-it-works">
-            How It Works
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#why-choose-exter">
+            Why Choose Exter
           </Link>
-          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#locations">
-            Locations
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact-us">
+            Contact Us
           </Link>
         </nav>
       </header>
@@ -48,7 +87,57 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="features" className="w-full py-12 md:py-24 lg:py-32 bg-gray-100 dark:bg-gray-800">
+        <section id="what-we-believe-in" className="w-full py-12 md:py-24 lg:py-32 bg-green-100 dark:bg-gray-800">
+          <div className="container px-4 md:px-6">
+            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8 text-black">What we believe in?</h2>
+            <Carousel className="max-w-4xl mx-auto" opts={{ loop: true }} setApi={setApi}>
+              <CarouselContent>
+                {[
+                  {
+                    title: "Sustainable Mobility",
+                    content: "At Exter, we're committed to revolutionizing urban mobility. Our mission is to provide sustainable, efficient, and accessible transportation solutions that reduce carbon emissions and promote a cleaner environment.",
+                    image: "/exter_exit-enter.png"
+                  },
+                  {
+                    title: "Innovative Technology",
+                    content: "We specialize in cutting-edge battery-swapping solutions for two-wheelers. Our innovative approach ensures that eco-conscious individuals and delivery partners can enjoy seamless, uninterrupted journeys without compromising on efficiency.",
+                    image: "/exter_battery_swapp-machine.png"
+                  },
+                  {
+                    title: "Empowering Change",
+                    content: "With every battery swap, we're not just powering vehicles; we're fueling a movement. Exter is dedicated to redefining transportation for a greener planet, one swap at a time. Join us in shaping a sustainable future for all.",
+                    image: "/exter_logo.png",
+                  }
+                ].map((item, index) => (
+                  <CarouselItem key={index}>
+                    <Card className="bg-white rounded-lg shadow-lg h-full">
+                      <CardContent className="p-6 flex flex-col md:flex-row items-center md:items-start gap-4">
+                        <div className="w-full md:w-1/3 flex justify-center">
+                          <Image
+                            src={item.image}
+                            alt={item.title}
+                            width={300}
+                            height={300}
+                            className="rounded-lg object-cover"
+                            style={{ maxWidth: '100%', height: 'auto' }}
+                          />
+                        </div>
+                        <div className="w-full md:w-2/3">
+                          <h3 className="text-2xl font-bold mb-4 text-green-500">{item.title}</h3>
+                          <p className="text-gray-700">{item.content}</p>
+                        </div>
+                      </CardContent>
+                    </Card>
+                  </CarouselItem>
+                ))}
+              </CarouselContent>
+              <CarouselPrevious />
+              <CarouselNext />
+            </Carousel>
+          </div>
+        </section>
+
+        <section id="why-choose-exter" className="w-full py-12 md:py-24 lg:py-32">
           <div className="container px-4 md:px-6">
             <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">Why Choose Exter?</h2>
             <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
@@ -71,64 +160,24 @@ export default function Home() {
           </div>
         </section>
 
-        <section id="about" className="w-full py-12 md:py-24 lg:py-10 bg-green-100 dark:bg-gray-800">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">What we stand for</h2>
-            <div className="flex flex-col md:flex-row items-center space-y-4 md:space-y-0 md:space-x-8">
-              <Image
-                src="/exter_exit-enter.png"
-                alt="Battery Charging"
-                width={550}
-                height={550}
-                className="rounded-lg"
-              />
-              <div className="flex flex-col space-y-4">
-                <p className="text-lg">
-                  In the journey toward a sustainable future, Exter stands as a pioneer in revolutionizing urban mobility. The name itself encapsulates our mission: Exit Emission symbolizes a decisive move away from fossil-fuel dependence and harmful carbon footprints. Enter Electric marks our commitment to embracing clean, green, and electric energy solutions.
-                </p>
-                <p className="text-lg">
-                  At Exter, we specialize in battery-swapping solutions tailored for two-wheelers. Our innovative approach caters to the growing needs of delivery partners and eco-conscious individuals, providing a seamless experience for those who choose to prioritize sustainability without compromising efficiency.
-                </p>
-                <p className="text-lg">
-                  With every swap, we're not just fueling vehicles; we're fueling a movement—one that aims to redefine transportation for a greener planet.
-                </p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="how-it-works" className="w-full py-12 md:py-24 lg:py-32">
-          <div className="container px-4 md:px-6">
-            <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl text-center mb-8">How It Works</h2>
-            <div className="grid gap-10 sm:grid-cols-2 lg:grid-cols-3">
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">1</div>
-                <h3 className="text-xl font-bold">Locate</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Find the nearest Exter battery-swapping hub using our mobile app.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">2</div>
-                <h3 className="text-xl font-bold">Swap</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">Drive in, and our automated system will swap your battery in minutes.</p>
-              </div>
-              <div className="flex flex-col items-center space-y-2 border-gray-800 p-4 rounded-lg">
-                <div className="bg-blue-500 text-white rounded-full w-8 h-8 flex items-center justify-center font-bold text-lg">3</div>
-                <h3 className="text-xl font-bold">Go</h3>
-                <p className="text-sm text-gray-500 dark:text-gray-400 text-center">With a fully charged battery, you're ready to hit the road again.</p>
-              </div>
-            </div>
-          </div>
-        </section>
-
-        <section id="cta" className="w-full py-12 md:py-24 lg:py-32 text-black bg-gray-100 dark:bg-gray-800">
+        <section id="contact-us" className="w-full py-12 md:py-24 lg:py-32 text-black bg-gray-100 dark:bg-gray-800">
           <div className="container px-4 md:px-6">
             <div className="flex flex-col items-center space-y-4 text-center">
               <div className="space-y-2">
-                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Experience Battery-Swapping?</h2>
+                <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl">Ready to Experience Exter?</h2>
+                <h4 className="text-l font-bold tracking-tighter sm:text-4xl md:text-5xl">Contact Us</h4>
               </div>
               <div className="space-x-4">
-                <Button variant="secondary">Sign Up Now</Button>
-                <Button variant="outline">Contact Us</Button>
+                <p>
+                  <a
+                    href="https://maps.app.goo.gl/vmQatQNuUbiPAL6G7"
+                    target="_blank"
+                    rel="noopener noreferrer"
+                    className="text-blue-600 hover:underline"
+                  >
+                    1983, S End D Cross Rd, KSRTC Layout, Jayanagara 9th Block, J. P. Nagar, Bengaluru, Karnataka 560078
+                  </a>
+                </p>
               </div>
             </div>
           </div>
