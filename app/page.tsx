@@ -78,8 +78,8 @@ export default function LandingPage() {
           <div className="absolute inset-0 bg-black bg-opacity-50"></div>
           <div className="relative z-10 flex items-center justify-center h-full">
             <div className="text-center text-white">
-              <h1 className="text-4xl md:text-6xl font-bold mb-4">Power the Future of Mobility</h1>
-              <p className="text-xl md:text-2xl mb-8">Battery swapping for electric two-wheelers, compatible with 80+ models of electric scooters</p>
+              <h1 className="text-4xl md:text-6xl font-bold mb-4">Battery-Swapping for electric two wheelers</h1>
+              <p className="text-xl md:text-2xl mb-8">Compatible with 80+ models of electric scooters</p>
               <div className="space-x-4">
                 <a href="https://www.linkedin.com/company/exterapp/posts/?feedView=all">
                   <Button
