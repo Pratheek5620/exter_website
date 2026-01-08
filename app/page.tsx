@@ -84,7 +84,7 @@ export default function LandingPage() {
                 <a href="https://www.linkedin.com/company/exterapp/posts/?feedView=all">
                   <Button
                     variant="outline"
-                    className="text-white border-[#334DA0] text-[#334DA0] hover:text-black hover:bg-white hover:border-[#334DA0] transition-colors duration-300"
+                    className="text-black border-2 border-white hover:text-[#334DA0] hover:bg-white transition-all duration-300 ease-in-out"
                   >
                     Learn More
                   </Button>
@@ -191,7 +191,7 @@ export default function LandingPage() {
       </main>
       <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t bg-[#334DA0] text-white">
         <div className="items-center justify-between w-full">
-          <p className="text-center justify-center text-xs text-gray-200">© 2024 Exter. All rights reserved.</p>
+          <p className="text-center justify-center text-xs text-gray-200">© 2026 Pravit Tech Labs Private LTD. All rights reserved.</p>
         </div>
       </footer>
     </div>
