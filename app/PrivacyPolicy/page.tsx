@@ -35,124 +35,139 @@ export default function PrivacyPolicy() {
           <div className="container mx-auto px-4 md:px-6 max-w-4xl">
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#334DA0]">Privacy Policy</h1>
+            <p className="text-lg text-gray-700 mb-2">
+              Last Updated: [Date]
+            </p>
             <p className="text-lg text-gray-700 mb-12">
-              At Exter Energy (Pravit Tech Labs Pvt Ltd), we are committed to protecting your privacy while you help us build a greener, pollution-free earth.
+              Exter Energy respects your privacy and is committed to protecting your personal data.
             </p>
 
-            {/* Introduction Section */}
+            {/* 1. Introduction */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-[#334DA0]">Introduction</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                Welcome to Exter Energy, operated by Pravit Tech Labs Private Limited ("we," "us," or "our"). This Privacy Policy explains how we collect, use, disclose, and safeguard your information when you visit our website (exterenergy.com), use our mobile application, or interact with our battery swapping terminals.
-              </p>
+              <h2 className="text-3xl font-bold mb-4 text-[#334DA0]">1. Introduction</h2>
               <p className="text-gray-700 leading-relaxed">
-                By using our Services, you consent to the data practices described in this policy. If you do not agree with any part of this policy, please discontinue use of our platform immediately.
+                Exter Energy ("Exter", "we", "us", "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, process, disclose, and safeguard your personal information when you use our website, applications, and battery swapping services.
               </p>
             </section>
 
-            {/* Data We Collect Section */}
+            {/* 2. Scope */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">Data We Collect</h2>
+              <h2 className="text-3xl font-bold mb-4 text-[#334DA0]">2. Scope</h2>
+              <p className="text-gray-700 leading-relaxed">
+                This policy applies to information collected through our website, mobile applications, battery swapping services, customer support interactions, and partner interfaces.
+              </p>
+            </section>
+
+            {/* 3. Information We Collect */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">3. Information We Collect</h2>
               
               <div className="space-y-6">
-                {/* Personal Info */}
+                {/* Personal Information */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">Personal Information</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>Name, email address, phone number</li>
-                    <li>Shipping/billing address for EV purchases</li>
-                  </ul>
+                  <p className="text-gray-700">
+                    Name, phone number, email address, address, account details.
+                  </p>
                 </div>
 
-                {/* Device Data */}
+                {/* Sensitive Information */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Device Data</h3>
-                  <ul className="list-disc list-inside text-gray-700 space-y-2">
-                    <li>IP address, browser type</li>
-                    <li>Device identifiers and operating system details</li>
-                  </ul>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Sensitive Information</h3>
+                  <p className="text-gray-700">
+                    Payment details, location data related to battery swapping, identity verification data where required.
+                  </p>
+                </div>
+
+                {/* Usage Data */}
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Usage Data</h3>
+                  <p className="text-gray-700">
+                    Device information, IP address, app usage patterns, analytics data.
+                  </p>
                 </div>
               </div>
             </section>
 
-            {/* Location & Battery Telemetry Section */}
+            {/* 4. Use of Information */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">Location & Battery Telemetry</h2>
-              <p className="text-gray-700 leading-relaxed mb-6">
-                To provide our core Battery Swapping Service, we collect specialized data:
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">4. Use of Information</h2>
+              <p className="text-gray-700 leading-relaxed">
+                We use information to provide services, manage accounts, process payments, improve our platform, communicate updates, and send marketing communications with consent.
               </p>
-              
-              <div className="space-y-4">
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2 text-gray-800">Real-time Location</h3>
-                  <p className="text-gray-700">To help you find the nearest swapping station and verify swaps.</p>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2 text-gray-800">Battery Health</h3>
-                  <p className="text-gray-700">State of charge, temperature, and cycle counts for maintenance.</p>
-                </div>
-
-                <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-lg font-semibold mb-2 text-gray-800">Usage Statistics</h3>
-                  <p className="text-gray-700">Distance traveled and energy consumption patterns to optimize our fleet.</p>
-                </div>
-              </div>
             </section>
 
-            {/* How We Use Your Information Section */}
+            {/* 5. Sharing of Information */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">How We Use Your Information</h2>
-              <p className="text-gray-700 leading-relaxed mb-4">
-                We use your data to:
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">5. Sharing of Information</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Information may be shared with service providers, payment processors, analytics partners, or legal authorities when required by law. All third parties are bound by confidentiality obligations.
               </p>
-              
-              <ul className="grid grid-cols-1 md:grid-cols-2 gap-4">
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Process transactions</span>
-                </li>
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Manage battery swaps</span>
-                </li>
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Predict maintenance</span>
-                </li>
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Improve UI/UX</span>
-                </li>
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Fraud prevention</span>
-                </li>
-                <li className="bg-white p-4 rounded-lg border border-gray-200 flex items-start">
-                  <span className="text-green-500 mr-3 font-bold">✓</span>
-                  <span className="text-gray-700">Customer support</span>
-                </li>
-              </ul>
             </section>
 
-            {/* Data Security Section */}
+            {/* 6. Cookies & Tracking */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">Data Security</h2>
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">6. Cookies & Tracking</h2>
+              <p className="text-gray-700 leading-relaxed">
+                We use cookies and similar technologies to improve user experience and analyze traffic. You may control cookies through browser settings.
+              </p>
+            </section>
+
+            {/* 7. Data Security */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">7. Data Security</h2>
               <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
-                <p className="text-gray-700 leading-relaxed mb-4">
-                  We implement industry-standard security measures including SSL encryption for all data transfers. Your payment information is processed through PCI-DSS compliant gateways.
-                </p>
-                <p className="text-gray-700 leading-relaxed text-sm italic">
-                  However, no method of transmission over the internet is 100% secure, and we cannot guarantee absolute security.
+                <p className="text-gray-700 leading-relaxed">
+                  We use reasonable technical and organizational measures to protect personal data. However, no system is completely secure.
                 </p>
               </div>
             </section>
 
-            {/* Contact Information Section */}
+            {/* 8. Data Retention */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">Contact Information</h2>
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">8. Data Retention</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Personal information is retained only as long as necessary for legal and operational purposes.
+              </p>
+            </section>
+
+            {/* 9. User Rights */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">9. User Rights</h2>
+              <p className="text-gray-700 leading-relaxed">
+                You may request access, correction, deletion, restriction, or portability of your data and withdraw consent where applicable.
+              </p>
+            </section>
+
+            {/* 10. Children's Privacy */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">10. Children's Privacy</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Our services are not intended for minors. We do not knowingly collect data from children.
+              </p>
+            </section>
+
+            {/* 11. International Transfers */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">11. International Transfers</h2>
+              <p className="text-gray-700 leading-relaxed">
+                Data transfers outside India are protected using appropriate safeguards in compliance with applicable laws.
+              </p>
+            </section>
+
+            {/* 12. Policy Updates */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">12. Policy Updates</h2>
+              <p className="text-gray-700 leading-relaxed">
+                This policy may be updated periodically. Updates will be published on our website.
+              </p>
+            </section>
+
+            {/* 13. Contact Information */}
+            <section className="mb-12">
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">13. Contact Information</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                If you have any questions regarding this policy or your data rights, please reach out to us:
+                For questions or concerns, contact:
               </p>
               
               <div className="bg-gray-100 p-8 rounded-lg border border-gray-300 space-y-4">
