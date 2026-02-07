@@ -61,6 +61,9 @@ export default function LandingPage() {
           <Link className="text-sm font-medium hover:underline underline-offset-4" href="#contact-us">
             Contact Us
           </Link>
+          <Link className="text-sm font-medium hover:underline underline-offset-4" href="/privacy-policy">
+    Privacy Policy
+  </Link>
         </nav>
       </header>
       <main className="flex-1">
