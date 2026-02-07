@@ -36,7 +36,7 @@ export default function PrivacyPolicy() {
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#334DA0]">Privacy Policy</h1>
             <p className="text-lg text-gray-700 mb-2">
-              Last Updated: [Date]
+              Last Updated: 29/01/2026
             </p>
             <p className="text-lg text-gray-700 mb-12">
               Exter Energy respects your privacy and is committed to protecting your personal data.
