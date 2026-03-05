@@ -36,140 +36,164 @@ export default function PrivacyPolicy() {
             {/* Title */}
             <h1 className="text-4xl md:text-5xl font-bold mb-4 text-[#334DA0]">Privacy Policy</h1>
             <p className="text-lg text-gray-700 mb-2">
-              Last Updated: 29/01/2026
+              Last Updated: March 2026
             </p>
             <p className="text-lg text-gray-700 mb-12">
-              Exter Energy respects your privacy and is committed to protecting your personal data.
+              Welcome to Exter Energy, a brand owned and operated by Parvit Technologies ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy applies to all information collected through our website (<a href="https://exterenergy.com" className="text-[#334DA0] hover:underline">https://exterenergy.com</a>), our mobile application, and our communication channels, including WhatsApp.
             </p>
 
-            {/* 1. Introduction */}
+            {/* 1. Information We Collect */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-[#334DA0]">1. Introduction</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Exter Energy ("Exter", "we", "us", "our") respects your privacy and is committed to protecting your personal data. This Privacy Policy explains how we collect, use, store, process, disclose, and safeguard your personal information when you use our website, applications, and battery swapping services.
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">1. Information We Collect</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We collect personal information that you voluntarily provide to us when you register on the Website, express an interest in obtaining information about us or our products and services, or when you participate in activities on the Website.
               </p>
-            </section>
 
-            {/* 2. Scope */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-4 text-[#334DA0]">2. Scope</h2>
-              <p className="text-gray-700 leading-relaxed">
-                This policy applies to information collected through our website, mobile applications, battery swapping services, customer support interactions, and partner interfaces.
-              </p>
-            </section>
-
-            {/* 3. Information We Collect */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">3. Information We Collect</h2>
-              
               <div className="space-y-6">
-                {/* Personal Information */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Personal Information</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Personal Identifiers</h3>
                   <p className="text-gray-700">
-                    Name, phone number, email address, address, account details.
+                    Name, phone number, email address, and billing/shipping address.
                   </p>
                 </div>
 
-                {/* Sensitive Information */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Sensitive Information</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Business Details</h3>
                   <p className="text-gray-700">
-                    Payment details, location data related to battery swapping, identity verification data where required.
+                    GST number and business name (if applicable for B2B services).
                   </p>
                 </div>
 
-                {/* Usage Data */}
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
-                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Usage Data</h3>
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Technical Data</h3>
                   <p className="text-gray-700">
-                    Device information, IP address, app usage patterns, analytics data.
+                    IP address, browser type, and device information.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">WhatsApp Communication Data</h3>
+                  <p className="text-gray-700">
+                    If you opt-in to our WhatsApp marketing, we collect your mobile number and chat history to provide better service.
                   </p>
                 </div>
               </div>
             </section>
 
-            {/* 4. Use of Information */}
+            {/* 2. How We Use Your Information */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">4. Use of Information</h2>
-              <p className="text-gray-700 leading-relaxed">
-                We use information to provide services, manage accounts, process payments, improve our platform, communicate updates, and send marketing communications with consent.
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">2. How We Use Your Information</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                We use the information we collect for several purposes:
               </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>To facilitate account creation and logon process.</li>
+                <li>To send administrative information to you (e.g., battery swap updates, service alerts).</li>
+                <li>To fulfill and manage your orders, payments, and swaps.</li>
+                <li>For Marketing and Promotional Communications: We may use your personal information for our marketing purposes, such as sending updates via WhatsApp, email, or SMS, if this is in accordance with your marketing preferences.</li>
+              </ul>
             </section>
 
-            {/* 5. Sharing of Information */}
+            {/* 3. WhatsApp Marketing & Communication */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">5. Sharing of Information</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Information may be shared with service providers, payment processors, analytics partners, or legal authorities when required by law. All third parties are bound by confidentiality obligations.
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">3. WhatsApp Marketing & Communication</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                By providing your phone number and opting in, you agree to receive automated and manual messages from Exter Energy (Parvit Technologies) on WhatsApp.
               </p>
+
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Consent</h3>
+                  <p className="text-gray-700">
+                    We only send marketing messages to users who have explicitly opted in.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Opt-out</h3>
+                  <p className="text-gray-700">
+                    You can stop receiving WhatsApp messages at any time by replying with "STOP" or using the unsubscribe link provided in the chat.
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Data Sharing</h3>
+                  <p className="text-gray-700">
+                    We do not sell your WhatsApp contact details to third parties. Data is shared only with Meta (as the platform provider) to facilitate communication.
+                  </p>
+                </div>
+              </div>
             </section>
 
-            {/* 6. Cookies & Tracking */}
+            {/* 4. Legal Basis for Processing */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">6. Cookies & Tracking</h2>
-              <p className="text-gray-700 leading-relaxed">
-                We use cookies and similar technologies to improve user experience and analyze traffic. You may control cookies through browser settings.
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">4. Legal Basis for Processing (India)</h2>
+              <p className="text-gray-700 leading-relaxed mb-6">
+                We process your information based on your consent and in compliance with the Digital Personal Data Protection (DPDP) Act and other applicable Indian laws. For the purpose of business transparency:
               </p>
+
+              <div className="space-y-6">
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Legal Entity</h3>
+                  <p className="text-gray-700">Parvit Technologies</p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">GSTIN</h3>
+                  <p className="text-gray-700 font-mono">29AALCP5358E1Z1</p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Corporate Office</h3>
+                  <p className="text-gray-700">
+                    1983, S End D Cross Rd, KSRTC Layout,<br />
+                    Jayanagara 9th Block, J. P. Nagar,<br />
+                    Bengaluru, Karnataka 560078
+                  </p>
+                </div>
+
+                <div className="bg-white p-6 rounded-lg border border-gray-200">
+                  <h3 className="text-xl font-semibold mb-3 text-gray-800">Registered Office (Legal)</h3>
+                  <p className="text-gray-700">
+                    Parvit Technologies (Exter Energy)<br />
+                    638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi<br />
+                    Bengaluru, Karnataka 560067
+                  </p>
+                </div>
+              </div>
             </section>
 
-            {/* 7. Data Security */}
+            {/* 5. Data Security */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">7. Data Security</h2>
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">5. Data Security</h2>
               <div className="bg-blue-50 p-6 rounded-lg border border-blue-200">
                 <p className="text-gray-700 leading-relaxed">
-                  We use reasonable technical and organizational measures to protect personal data. However, no system is completely secure.
+                  We implement appropriate technical and organizational security measures designed to protect the security of any personal information we process. However, please also remember that we cannot guarantee that the internet itself is 100% secure.
                 </p>
               </div>
             </section>
 
-            {/* 8. Data Retention */}
+            {/* 6. Your Privacy Rights */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">8. Data Retention</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Personal information is retained only as long as necessary for legal and operational purposes.
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">6. Your Privacy Rights</h2>
+              <p className="text-gray-700 leading-relaxed mb-4">
+                Depending on your location, you have the right to:
               </p>
+              <ul className="list-disc list-inside space-y-2 text-gray-700">
+                <li>Request access to your personal data.</li>
+                <li>Request correction of inaccurate data.</li>
+                <li>Request deletion of your data (subject to legal obligations).</li>
+                <li>Withdraw consent for marketing at any time.</li>
+              </ul>
             </section>
 
-            {/* 9. User Rights */}
+            {/* 7. Contact Us */}
             <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">9. User Rights</h2>
-              <p className="text-gray-700 leading-relaxed">
-                You may request access, correction, deletion, restriction, or portability of your data and withdraw consent where applicable.
-              </p>
-            </section>
-
-            {/* 10. Children's Privacy */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">10. Children's Privacy</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Our services are not intended for minors. We do not knowingly collect data from children.
-              </p>
-            </section>
-
-            {/* 11. International Transfers */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">11. International Transfers</h2>
-              <p className="text-gray-700 leading-relaxed">
-                Data transfers outside India are protected using appropriate safeguards in compliance with applicable laws.
-              </p>
-            </section>
-
-            {/* 12. Policy Updates */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">12. Policy Updates</h2>
-              <p className="text-gray-700 leading-relaxed">
-                This policy may be updated periodically. Updates will be published on our website.
-              </p>
-            </section>
-
-            {/* 13. Contact Information */}
-            <section className="mb-12">
-              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">13. Contact Information</h2>
+              <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">7. Contact Us</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                For questions or concerns, contact:
+                If you have questions or comments about this policy, you may contact our Grievance Officer at:
               </p>
-              
+
               <div className="bg-gray-100 p-8 rounded-lg border border-gray-300 space-y-4">
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Email</h3>
@@ -177,17 +201,39 @@ export default function PrivacyPolicy() {
                     support@exterenergy.com
                   </a>
                 </div>
-                
+
                 <div>
-                  <h3 className="font-semibold text-gray-800 mb-2">Registered Address</h3>
+                  <h3 className="font-semibold text-gray-800 mb-2">Phone</h3>
+                  <a href="tel:+918904094545" className="text-[#334DA0] hover:underline">
+                    +91 8904094545
+                  </a>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-2">Corporate Office</h3>
                   <p className="text-gray-700">
-                    NO. 638, Aiswarya House, New Extension,<br />
-                    Behind Sathya Sai Baba Ashram, Kadugodi,<br />
+                    1983, S End D Cross Rd, KSRTC Layout,<br />
+                    Jayanagara 9th Block, J. P. Nagar,<br />
+                    Bengaluru, Karnataka 560078
+                  </p>
+                </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-2">Registered Office (Legal)</h3>
+                  <p className="text-gray-700">
+                    Parvit Technologies (Exter Energy)<br />
+                    638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi<br />
                     Bengaluru, Karnataka 560067
                   </p>
                 </div>
+
+                <div>
+                  <h3 className="font-semibold text-gray-800 mb-2">GSTIN</h3>
+                  <p className="text-gray-700 font-mono">29AALCP5358E1Z1</p>
+                </div>
               </div>
             </section>
+
           </div>
         </div>
       </main>
@@ -196,10 +242,10 @@ export default function PrivacyPolicy() {
       <footer className="bg-[#334DA0] text-white py-8 px-4">
         <div className="container mx-auto px-4 md:px-6 max-w-6xl text-center">
           <p className="text-sm">
-            © 2024 Exter Energy. All rights reserved.
+            © 2026 Exter Energy. All rights reserved.
           </p>
           <p className="text-xs mt-2 opacity-80">
-            Operated by Pravit Tech Labs Private Limited
+            Operated by Parvit Technologies
           </p>
         </div>
       </footer>
