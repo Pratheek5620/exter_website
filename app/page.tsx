@@ -173,7 +173,7 @@ export default function LandingPage() {
         <section id="contact-us" className="w-full py-12 md:py-24 lg:py-32 text-black bg-gray-100 dark:bg-gray-800">
           <div className="container mx-auto px-4 md:px-6 max-w-6xl">
             <div className="flex flex-col items-center space-y-4 text-center">
-              <div className="space-y-2">
+              {/* <div className="space-y-2">
                 <h2 className="text-3xl font-bold tracking-tighter sm:text-4xl md:text-5xl mb-4">Ready to Experience exter?</h2>
               </div>
               <div className="space-x-4">
@@ -187,7 +187,31 @@ export default function LandingPage() {
                     1983, S End D Cross Rd, KSRTC Layout, Jayanagara 9th Block, J. P. Nagar, Bengaluru, Karnataka 560078
                   </a>
                 </p>
-              </div>
+              </div> */}
+              <div className="space-y-3">
+  <p>
+    <span className="font-semibold text-gray-700">Corporate Office: </span>
+    
+      href="https://maps.app.goo.gl/vmQatQNuUbiPAL6G7"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      1983, S End D Cross Rd, KSRTC Layout, Jayanagara 9th Block, J. P. Nagar, Bengaluru, Karnataka 560078
+    </a>
+  </p>
+  <p>
+    <span className="font-semibold text-gray-700">Registered Office: </span>
+    
+      href="https://maps.app.goo.gl/kadugodi"
+      target="_blank"
+      rel="noopener noreferrer"
+      className="text-blue-600 hover:underline"
+    >
+      Parvit Technologies (Exter Energy), 638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi, Bengaluru, Karnataka 560067
+    </a>
+  </p>
+</div>
             </div>
           </div>
         </section>
