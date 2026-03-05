@@ -192,9 +192,25 @@ export default function LandingPage() {
           </div>
         </section>
       </main>
-      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t bg-[#334DA0] text-white">
+      {/* <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t bg-[#334DA0] text-white">
         <div className="items-center justify-between w-full">
           <p className="text-center justify-center text-xs text-gray-200">© 2026 Pravit Tech Labs Private LTD. All rights reserved. | <Link href="/PrivacyPolicy" className="hover:underline">Privacy Policy</Link></p>
+        </div>
+      </footer> */}
+      <footer className="flex flex-col gap-2 sm:flex-row py-6 w-full shrink-0 items-center justify-center px-4 md:px-6 border-t bg-[#334DA0] text-white">
+        <div className="items-center justify-between w-full">
+          <p className="text-center text-xs text-gray-200 mb-1">
+            © 2026 Exter Energy. All Rights Reserved. | Legal Entity: Parvit Technologies | GSTIN: 29AALCP5358E1Z1
+          </p>
+          <p className="text-center text-xs text-gray-300 mb-1">
+            <span className="font-semibold text-gray-200">Corporate Office:</span> 1983, S End D Cross Rd, KSRTC Layout, Jayanagara 9th Block, J. P. Nagar, Bengaluru, Karnataka 560078
+          </p>
+          <p className="text-center text-xs text-gray-300 mb-1">
+            <span className="font-semibold text-gray-200">Registered Office:</span> Parvit Technologies (Exter Energy), 638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi, Bengaluru, Karnataka 560067
+          </p>
+          <p className="text-center text-xs text-gray-200">
+            Contact: <a href="tel:+918904094545" className="hover:underline">+91 8904094545</a> | <a href="mailto:support@exterenergy.com" className="hover:underline">support@exterenergy.com</a> | <Link href="/PrivacyPolicy" className="hover:underline">Privacy Policy</Link>
+          </p>
         </div>
       </footer>
     </div>
