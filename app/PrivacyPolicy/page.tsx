@@ -39,7 +39,7 @@ export default function PrivacyPolicy() {
               Last Updated: March 2026
             </p>
             <p className="text-lg text-gray-700 mb-12">
-              Welcome to Exter Energy, a brand owned and operated by Parvit Technologies ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy applies to all information collected through our website (<a href="https://exterenergy.com" className="text-[#334DA0] hover:underline">https://exterenergy.com</a>), our mobile application, and our communication channels, including WhatsApp.
+              Welcome to Exter Energy, a brand owned and operated by Pravit Tech Labs Private Limited ("Company", "we", "us", or "our"). We are committed to protecting your personal information and your right to privacy. This Privacy Policy applies to all information collected through our website (<a href="https://exterenergy.com" className="text-[#334DA0] hover:underline">https://exterenergy.com</a>), our mobile application, and our communication channels, including WhatsApp.
             </p>
 
             {/* 1. Information We Collect */}
@@ -98,7 +98,7 @@ export default function PrivacyPolicy() {
             <section className="mb-12">
               <h2 className="text-3xl font-bold mb-6 text-[#334DA0]">3. WhatsApp Marketing & Communication</h2>
               <p className="text-gray-700 leading-relaxed mb-6">
-                By providing your phone number and opting in, you agree to receive automated and manual messages from Exter Energy (Parvit Technologies) on WhatsApp.
+                By providing your phone number and opting in, you agree to receive automated and manual messages from Exter Energy (Pravit Tech Labs Private Limited) on WhatsApp.
               </p>
 
               <div className="space-y-6">
@@ -135,7 +135,7 @@ export default function PrivacyPolicy() {
               <div className="space-y-6">
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">Legal Entity</h3>
-                  <p className="text-gray-700">Parvit Technologies</p>
+                  <p className="text-gray-700">Pravit Tech Labs Private Limited</p>
                 </div>
 
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
@@ -155,7 +155,7 @@ export default function PrivacyPolicy() {
                 <div className="bg-white p-6 rounded-lg border border-gray-200">
                   <h3 className="text-xl font-semibold mb-3 text-gray-800">Registered Office (Legal)</h3>
                   <p className="text-gray-700">
-                    Parvit Technologies (Exter Energy)<br />
+                    Pravit Tech Labs Private Limited (Exter Energy)<br />
                     638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi<br />
                     Bengaluru, Karnataka 560067
                   </p>
@@ -221,7 +221,7 @@ export default function PrivacyPolicy() {
                 <div>
                   <h3 className="font-semibold text-gray-800 mb-2">Registered Office (Legal)</h3>
                   <p className="text-gray-700">
-                    Parvit Technologies (Exter Energy)<br />
+                    Pravit Tech Labs Private Limited (Exter Energy)<br />
                     638, Kadugodi Main Road, Sathya Sai Ashram Whitefield, Kadugodi<br />
                     Bengaluru, Karnataka 560067
                   </p>
@@ -245,7 +245,7 @@ export default function PrivacyPolicy() {
             © 2026 Exter Energy. All rights reserved.
           </p>
           <p className="text-xs mt-2 opacity-80">
-            Operated by Parvit Technologies
+            Operated by Pravit Tech Labs Private Limited
           </p>
         </div>
       </footer>
