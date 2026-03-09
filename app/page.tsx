@@ -191,7 +191,7 @@ export default function LandingPage() {
               <div className="space-y-3">
   <p>
     <span className="font-semibold text-gray-700">Corporate Office: </span>
-    
+    <a
       href="https://maps.app.goo.gl/vmQatQNuUbiPAL6G7"
       target="_blank"
       rel="noopener noreferrer"
@@ -202,7 +202,7 @@ export default function LandingPage() {
   </p>
   <p>
     <span className="font-semibold text-gray-700">Registered Office: </span>
-    
+    <a
       href="https://maps.app.goo.gl/kadugodi"
       target="_blank"
       rel="noopener noreferrer"
